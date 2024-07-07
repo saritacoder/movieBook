@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="handleFormSubmit(event)" class="form">
+      <div class="form-group">
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div class="form-group">
+        <label for="setNo">Set Number:</label>
+        <input type="number" name="setNo" id="setNo" />
+      </div>
+      <button type="submit">Add </button>
+    </form>
+
+    <h2 id="no-sets">Nothing Present</h2>
+    <ul id="user-list"></ul>
+
+    <h2>Movie Booking</h2>
+    <h3 id="total-value">Total Booked:</h3>
+    Find Slot: <input type="number" id="search" oninput="handleSearch(event)">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
